@@ -5,7 +5,7 @@ I am excited to share the project that I have developed as per the requirements.
 
 ## Requirements
 The system requirements for this project are as following:
-|                          			|                         |
+
 |-------------------------------|-----------------------------|
 |Operating System					      |Preference using *nix system (to run startup script), but any system will do|
 |RAM       |According to docker stats while running: 1GB (but 2GB is better)           |
