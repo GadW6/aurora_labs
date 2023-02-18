@@ -1,0 +1,64 @@
+version: '3.8'
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins_python:latest
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+      - 50000:50000
+    networks:
+      - public
+      - private
+    environment:
+      JAVA_OPTS: "-Dhudson.model.ParametersAction.keepUndefinedParameters=true"
+    volumes:
+      - ./data/jenkins_data:/var/jenkins_home    
+
+  # TODO: add jenkins agent node
+  # agent:
+  #   container_name: agent
+  #   image: jenkins/ssh-agent
+  #   privileged: true
+  #   user: root
+  #   expose:
+  #     - 22
+  #   networks:
+  #     - private
+  #   environment:
+  #     - JENKINS_AGENT_SSH_PUBKEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCT7kWTp3ECYOyv0XMqSUkfe+FL9HYp1aNiCrq7C0uTZa8h6fZb5bWgQGH4uPB3mPED20CcAiCHDZuF5dbUHf01ktT7vnEaC7VK4Rj0vz0VoNu5bl5mkfIr/zlCYiSO/yAbmSUsunjD4gZ4DfFmyCsU0mCQ8IOeBX427Lnah5MUb/y0MUjZjgWnG0pTIiGcetvwBLUTcF5KhMPvqbUH+1jZKJVLj3hEou6RmuWBwy6ZqN407lSq4EMJnYGPtwC+ymsZeZ38dVzdQokZolvksxHiOipCozqvRbcoCcVtNc7cI0UUPPRo7Qvgt+738p8giMfBMZPQppfaF4xy9GmaY0iislAJPZ//eRXjj++rdUnR43++v+s4e+deFOqU6qml0oCHELqvrX5mYkIvmBomckLRHi5qWFis8gXRjl9+kSXxcPpZZkUxBT9yFxqwBYYSv2LUiwjf+kSWXV+R2z0fiJc9dkNhF9k6QMeqb0DlkWY0XBmN3l1qKvF35wpXWjcfULQWSdCq4cPjs1zMD2Q7SY0FNd/xp/P+hFihzuxnS5gBTaBYb+4a9zBF6ubnIS+oWWPthFLwNLdgzUHll59e1QODB9swurmLi1Q9GoRfODi1GaPuYqIQlaWioZfPNEhlMjWFEch+jYW7cUZ98GgIt2fOUymArDeuZeDpFTTK+Fizww== administrator@kali"
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+
+  gitea:
+    container_name: gitea
+    image: gitea/gitea:1.18.1
+    networks:
+      - public
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    restart: unless-stopped
+    volumes:
+      - ./data/gitea:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "3000:3000"
+      - "222:22"    
+
+  bapi:
+    container_name: bapi
+    image: bapi:latest
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - APP_PORT=5000
+      - APP_HOST=0.0.0.0
+    networks:
+      - private
+
+networks:
+  public:
+  private:

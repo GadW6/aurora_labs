@@ -1,0 +1,1 @@
+git http://gitea:3000/git/jenkins.git

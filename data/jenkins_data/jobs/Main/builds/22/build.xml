@@ -1,0 +1,447 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1268.v6eb_e2ee1a_85a">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <org.jenkinsci.plugins.gwt.GenericCause plugin="generic-webhook-trigger@1.86.2">
+            <resolvedVariables class="tree-map"/>
+            <postContent>{
+  &quot;ref&quot;: &quot;refs/heads/main&quot;,
+  &quot;before&quot;: &quot;bdde0a69599ac71bba22ba33e4290475cd93e038&quot;,
+  &quot;after&quot;: &quot;bdde0a69599ac71bba22ba33e4290475cd93e038&quot;,
+  &quot;compare_url&quot;: &quot;http://localhost:3000/git/jenkins/compare/bdde0a69599ac71bba22ba33e4290475cd93e038...bdde0a69599ac71bba22ba33e4290475cd93e038&quot;,
+  &quot;commits&quot;: [
+    {
+      &quot;id&quot;: &quot;bdde0a69599ac71bba22ba33e4290475cd93e038&quot;,
+      &quot;message&quot;: &quot;Update &apos;main.py&apos;\n&quot;,
+      &quot;url&quot;: &quot;http://localhost:3000/git/jenkins/commit/bdde0a69599ac71bba22ba33e4290475cd93e038&quot;,
+      &quot;author&quot;: {
+        &quot;name&quot;: &quot;git&quot;,
+        &quot;email&quot;: &quot;me@example.com&quot;,
+        &quot;username&quot;: &quot;&quot;
+      },
+      &quot;committer&quot;: {
+        &quot;name&quot;: &quot;git&quot;,
+        &quot;email&quot;: &quot;me@example.com&quot;,
+        &quot;username&quot;: &quot;&quot;
+      },
+      &quot;verification&quot;: null,
+      &quot;timestamp&quot;: &quot;0001-01-01T00:00:00Z&quot;,
+      &quot;added&quot;: null,
+      &quot;removed&quot;: null,
+      &quot;modified&quot;: null
+    }
+  ],
+  &quot;total_commits&quot;: 1,
+  &quot;head_commit&quot;: {
+    &quot;id&quot;: &quot;bdde0a69599ac71bba22ba33e4290475cd93e038&quot;,
+    &quot;message&quot;: &quot;Update &apos;main.py&apos;\n&quot;,
+    &quot;url&quot;: &quot;http://localhost:3000/git/jenkins/commit/bdde0a69599ac71bba22ba33e4290475cd93e038&quot;,
+    &quot;author&quot;: {
+      &quot;name&quot;: &quot;git&quot;,
+      &quot;email&quot;: &quot;me@example.com&quot;,
+      &quot;username&quot;: &quot;&quot;
+    },
+    &quot;committer&quot;: {
+      &quot;name&quot;: &quot;git&quot;,
+      &quot;email&quot;: &quot;me@example.com&quot;,
+      &quot;username&quot;: &quot;&quot;
+    },
+    &quot;verification&quot;: null,
+    &quot;timestamp&quot;: &quot;0001-01-01T00:00:00Z&quot;,
+    &quot;added&quot;: null,
+    &quot;removed&quot;: null,
+    &quot;modified&quot;: null
+  },
+  &quot;repository&quot;: {
+    &quot;id&quot;: 1,
+    &quot;owner&quot;: {
+      &quot;id&quot;: 1,
+      &quot;login&quot;: &quot;git&quot;,
+      &quot;login_name&quot;: &quot;&quot;,
+      &quot;full_name&quot;: &quot;&quot;,
+      &quot;email&quot;: &quot;me@example.com&quot;,
+      &quot;avatar_url&quot;: &quot;http://localhost:3000/avatar/2e0d5407ce8609047b8255c50405d7b1&quot;,
+      &quot;language&quot;: &quot;&quot;,
+      &quot;is_admin&quot;: false,
+      &quot;last_login&quot;: &quot;0001-01-01T00:00:00Z&quot;,
+      &quot;created&quot;: &quot;2023-02-18T18:16:02+02:00&quot;,
+      &quot;restricted&quot;: false,
+      &quot;active&quot;: false,
+      &quot;prohibit_login&quot;: false,
+      &quot;location&quot;: &quot;&quot;,
+      &quot;website&quot;: &quot;&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;visibility&quot;: &quot;public&quot;,
+      &quot;followers_count&quot;: 0,
+      &quot;following_count&quot;: 0,
+      &quot;starred_repos_count&quot;: 0,
+      &quot;username&quot;: &quot;git&quot;
+    },
+    &quot;name&quot;: &quot;jenkins&quot;,
+    &quot;full_name&quot;: &quot;git/jenkins&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;empty&quot;: false,
+    &quot;private&quot;: false,
+    &quot;fork&quot;: false,
+    &quot;template&quot;: false,
+    &quot;parent&quot;: null,
+    &quot;mirror&quot;: false,
+    &quot;size&quot;: 21,
+    &quot;language&quot;: &quot;&quot;,
+    &quot;languages_url&quot;: &quot;http://localhost:3000/api/v1/repos/git/jenkins/languages&quot;,
+    &quot;html_url&quot;: &quot;http://localhost:3000/git/jenkins&quot;,
+    &quot;ssh_url&quot;: &quot;git@localhost:git/jenkins.git&quot;,
+    &quot;clone_url&quot;: &quot;http://localhost:3000/git/jenkins.git&quot;,
+    &quot;original_url&quot;: &quot;&quot;,
+    &quot;website&quot;: &quot;&quot;,
+    &quot;stars_count&quot;: 0,
+    &quot;forks_count&quot;: 0,
+    &quot;watchers_count&quot;: 1,
+    &quot;open_issues_count&quot;: 0,
+    &quot;open_pr_counter&quot;: 0,
+    &quot;release_counter&quot;: 0,
+    &quot;default_branch&quot;: &quot;main&quot;,
+    &quot;archived&quot;: false,
+    &quot;created_at&quot;: &quot;2023-02-18T18:16:40+02:00&quot;,
+    &quot;updated_at&quot;: &quot;2023-02-18T18:25:18+02:00&quot;,
+    &quot;permissions&quot;: {
+      &quot;admin&quot;: false,
+      &quot;push&quot;: false,
+      &quot;pull&quot;: false
+    },
+    &quot;has_issues&quot;: true,
+    &quot;internal_tracker&quot;: {
+      &quot;enable_time_tracker&quot;: true,
+      &quot;allow_only_contributors_to_track_time&quot;: true,
+      &quot;enable_issue_dependencies&quot;: true
+    },
+    &quot;has_wiki&quot;: true,
+    &quot;has_pull_requests&quot;: true,
+    &quot;has_projects&quot;: true,
+    &quot;ignore_whitespace_conflicts&quot;: false,
+    &quot;allow_merge_commits&quot;: true,
+    &quot;allow_rebase&quot;: true,
+    &quot;allow_rebase_explicit&quot;: true,
+    &quot;allow_squash_merge&quot;: true,
+    &quot;allow_rebase_update&quot;: true,
+    &quot;default_delete_branch_after_merge&quot;: false,
+    &quot;default_merge_style&quot;: &quot;merge&quot;,
+    &quot;avatar_url&quot;: &quot;&quot;,
+    &quot;internal&quot;: false,
+    &quot;mirror_interval&quot;: &quot;&quot;,
+    &quot;mirror_updated&quot;: &quot;0001-01-01T00:00:00Z&quot;,
+    &quot;repo_transfer&quot;: null
+  },
+  &quot;pusher&quot;: {
+    &quot;id&quot;: 1,
+    &quot;login&quot;: &quot;git&quot;,
+    &quot;login_name&quot;: &quot;&quot;,
+    &quot;full_name&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;me@example.com&quot;,
+    &quot;avatar_url&quot;: &quot;http://localhost:3000/avatar/2e0d5407ce8609047b8255c50405d7b1&quot;,
+    &quot;language&quot;: &quot;&quot;,
+    &quot;is_admin&quot;: false,
+    &quot;last_login&quot;: &quot;0001-01-01T00:00:00Z&quot;,
+    &quot;created&quot;: &quot;2023-02-18T18:16:02+02:00&quot;,
+    &quot;restricted&quot;: false,
+    &quot;active&quot;: false,
+    &quot;prohibit_login&quot;: false,
+    &quot;location&quot;: &quot;&quot;,
+    &quot;website&quot;: &quot;&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;visibility&quot;: &quot;public&quot;,
+    &quot;followers_count&quot;: 0,
+    &quot;following_count&quot;: 0,
+    &quot;starred_repos_count&quot;: 0,
+    &quot;username&quot;: &quot;git&quot;
+  },
+  &quot;sender&quot;: {
+    &quot;id&quot;: 1,
+    &quot;login&quot;: &quot;git&quot;,
+    &quot;login_name&quot;: &quot;&quot;,
+    &quot;full_name&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;me@example.com&quot;,
+    &quot;avatar_url&quot;: &quot;http://localhost:3000/avatar/2e0d5407ce8609047b8255c50405d7b1&quot;,
+    &quot;language&quot;: &quot;&quot;,
+    &quot;is_admin&quot;: false,
+    &quot;last_login&quot;: &quot;0001-01-01T00:00:00Z&quot;,
+    &quot;created&quot;: &quot;2023-02-18T18:16:02+02:00&quot;,
+    &quot;restricted&quot;: false,
+    &quot;active&quot;: false,
+    &quot;prohibit_login&quot;: false,
+    &quot;location&quot;: &quot;&quot;,
+    &quot;website&quot;: &quot;&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;visibility&quot;: &quot;public&quot;,
+    &quot;followers_count&quot;: 0,
+    &quot;following_count&quot;: 0,
+    &quot;starred_repos_count&quot;: 0,
+    &quot;username&quot;: &quot;git&quot;
+  }
+}</postContent>
+            <printContributedVariables>false</printContributedVariables>
+            <printPostContent>false</printPostContent>
+            <cause>Generic Cause</cause>
+          </org.jenkinsci.plugins.gwt.GenericCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>jenkins-generic-webhook-trigger-plugin_uuid</name>
+          <value>c767ecc0-ce9b-4186-bef7-f91cda0f99b0</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="empty-list"/>
+    </hudson.model.ParametersAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1214.v1de940103927">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@5.0.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/main</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@4.1.0">
+              <sha1>bdde0a69599ac71bba22ba33e4290475cd93e038</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/main</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>22</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>http://gitea:3000/git/jenkins.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@400.v6b_89a_1317c9a_">
+      <revisionStates>
+        <entry>
+          <string>git http://gitea:3000/git/jenkins.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@629.vb_5627b_ee2104">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5">
+      <stagesUUID>f66d2bcb-1096-49dd-84de-f1938c10e92f</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2118.v31fd5b_9944b_5">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Trigger Python Script</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">echo &quot;Running script...&quot;</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">python main.py</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>f66d2bcb-1096-49dd-84de-f1938c10e92f</uuid>
+          </stages>
+          <postBuild>
+            <conditions>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                <condition>always</condition>
+                <branch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>echo</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>message</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">Pipeline completed</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>cleanWs</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map"/>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </branch>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+            </conditions>
+          </postBuild>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+          <options>
+            <options>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+                <name>buildDiscarder</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTMethodCall>
+                    <name>logRotator</name>
+                    <args>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                        <key>
+                          <key>numToKeepStr</key>
+                        </key>
+                        <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                          <value class="string">5</value>
+                        </value>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    </args>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTMethodCall>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+            </options>
+            <inStage>false</inStage>
+          </options>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+  </actions>
+  <queueId>33</queueId>
+  <timestamp>1676738248308</timestamp>
+  <startTime>1676738248313</startTime>
+  <result>SUCCESS</result>
+  <duration>1356</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    agent any
+    options {
+        // Keep slim history
+        buildDiscarder(logRotator(numToKeepStr: &apos;5&apos;))
+    }
+    stages {
+        stage(&apos;Trigger Python Script&apos;) {
+            steps {
+                sh &apos;echo &quot;Running script...&quot;&apos;
+                sh &quot;python main.py&quot;
+            }
+        }
+    }
+    post {
+      always {
+        // Code to execute always
+        echo &apos;Pipeline completed&apos;
+        cleanWs()
+      }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>181724331</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>109429094</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>682445256</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>13621807</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>219895604</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>28</iota>
+    <head>1:28</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@5.0.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>http://gitea:3000/git/jenkins.git</url>
+            <credentialsId>gitea user</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/**</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/Main@script/7ae432cd21691c993b274ccbb6e1136527e36984aa5b2e461cece125899617c3</workspace>
+      <changelogFile>/var/jenkins_home/jobs/Main/builds/22/changelog8270396811271763748.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" reference="../../org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout/scm"/>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/Main</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>
