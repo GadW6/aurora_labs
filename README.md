@@ -81,7 +81,9 @@ Once you have reached this state, then the stack is running properly.
 #### Jenkins
 To login to jenkins use the following credentials:
 > Url: **http://localhost:8080/**
+
 > User: **admin**
+
 > Password: **password**
 
 --> Make your way to *Dashboard* > *Main*  to visit the pipeline.
@@ -89,7 +91,9 @@ To login to jenkins use the following credentials:
 #### Gitea
 To login the Gitea, use the following credentials:
 > Url: **http://localhost:3000/**
+
 > User: **git**
+
 > Password: **password**
 
 --> Make your way to *Explore* > *git/jenkins* to visit the repository.
